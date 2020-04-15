@@ -1,4 +1,4 @@
-package br.com.mutaquiha.estoque;
+package br.com.mutaquiha.loja;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

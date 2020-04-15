@@ -1,13 +1,13 @@
-package br.com.mutaquiha.estoque;
+package br.com.mutaquiha.loja;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EstoqueApplication {
+public class LojaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EstoqueApplication.class, args);
+		SpringApplication.run(LojaApplication.class, args);
 	}
 
 }
