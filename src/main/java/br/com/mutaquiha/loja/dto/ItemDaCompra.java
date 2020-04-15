@@ -1,7 +1,4 @@
-package br.com.mutaquiha.loja.entity;
-
-import lombok.Getter;
-import lombok.Setter;
+package br.com.mutaquiha.loja.dto;
 
 public class ItemDaCompra {
 
