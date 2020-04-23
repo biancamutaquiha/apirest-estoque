@@ -10,6 +10,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.Optional;
+
 @Service
 public class LojaService {
 
@@ -26,9 +28,9 @@ public class LojaService {
         System.out.println(exchange.getBody().getNome());
 
          */
-        InfoProdutoDTO info = produtoClient.findById(compra.getItens().get(0).getId());
+        Optional<InfoProdutoDTO> info = produtoClient.findById(compra.getItens().get(0).getId());
 
-        if (info == null){
+        if (info.isEmpty()){
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
 
